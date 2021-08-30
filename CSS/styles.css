@@ -1,0 +1,59 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.main-menu{
+    width: 100%;
+    padding: 0.8rem;
+    background-color: rgb(110, 123, 123);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gato{
+    width: 12rem;
+}
+.menu-btn{
+    width: 15%;
+    width: 5rem;
+    height: 6rem;
+}
+.miicon{
+    font-size: 2rem;
+}
+.menu-items{
+    position: fixed;
+    width: 20%;
+    top: 10%;
+    transition: all 0.2s;
+    background-color: black;
+    height: 100vh;
+    right: 0px;
+    transform: translate(90%);
+    flex-direction: column;
+    padding-top: 2em;
+    display: flex;
+}
+.active{
+    transform: translate(0%);
+}
+@media screen and (min-width:600px) {
+    .menu-items{
+        display: flex;
+        width: 15%;
+        justify-content: space-around;
+        flex-direction: row;
+        background-color: beige;
+        padding-top: 0px;
+        transform: translate(0px);
+        position: static;
+        width: auto;
+        height: auto;
+    }
+    .menu-items li{
+        list-style: none;
+    }
+    .menu-btn{
+        display: none;
+    }
+}
